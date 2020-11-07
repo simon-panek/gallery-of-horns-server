@@ -1,0 +1,24 @@
+{
+  "name": "gallery-of-horns-server",
+  "version": "1.0.0",
+  "description": "- Mariko Alvarado - Simon Panek",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simon-panek/gallery-of-horns-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simon-panek/gallery-of-horns-server/issues"
+  },
+  "homepage": "https://github.com/simon-panek/gallery-of-horns-server#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
