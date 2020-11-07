@@ -1,0 +1,29 @@
+#photo-template{
+  display: none;
+}
+body{
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Rock Salt', cursive;
+  font-size: 250%;
+  text-align: center;
+  margin: 25px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  border: solid black 1px;
+  box-sizing: border-box;
+}
+
+h2{
+  display: none;
+}
+
+p {
+  display: none;
+}
