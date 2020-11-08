@@ -2,6 +2,7 @@
 
 let keywordArray = [];
 let sortSwitch;
+let page = 'home';
 
 
 function Creatures(creature) {
@@ -113,11 +114,13 @@ Creatures.page2ReadJson = () => { //bring in data from page2.json
 
 const buttonPage2Listener = () => {
   $('#page2').click(Creatures.page2ReadJson);
+  page = 'home';
 };
 
 const buttonHomeListener = () => {
 
   $('#homeButton').click(Creatures.readJson);
+  page ='page2';
 };
 
 const whichClick = () => {
@@ -131,16 +134,27 @@ const whichClick = () => {
 
   }
 
+  if (page === 'horns'){
+    Creatures.page2ReadJson();
+  } else {
+    Creatures.readJson();
+  }
+
 }
 
 const sortListener = () => {
 
+  Creatures.readJson();
+
   $('#sortUl').click(whichClick);
+
+  buttonPage2Listener();
+  buttonHomeListener();
 
 };
 
-sortListener();
-buttonPage2Listener();
-buttonHomeListener();
+$(() => sortListener());
+//buttonPage2Listener();
+//buttonHomeListener();
 
-$(() => Creatures.readJson());
+//$(() => Creatures.readJson());
